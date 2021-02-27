@@ -22,12 +22,14 @@ h1 {
     overflow: auto;
     text-align: center;
     opacity: 0;
-    animation: surge 0.8s linear 1.6s forwards
+    /* animation: surge 0.8s linear 1.6s forwards; */
+    transition: opacity 1.2s;
 }
 
-.details div {
+.details .slide {
     margin-left: -400px;
-    animation: slide 0.5s linear 1.4s forwards;
+    /* animation: slide 0.5s linear 1.4s forwards; */
+    transition: margin-left 0.5s;
     font-family: Roboto;
 }
 
