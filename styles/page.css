@@ -1,0 +1,50 @@
+body {
+    overflow: hidden;
+}
+
+h1 {
+    animation: surge 1.2s linear;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #0b2228ff;
+    color: #cececeff;
+}
+
+.details {
+    overflow: auto;
+    text-align: center;
+    opacity: 0;
+    animation: surge 0.8s linear 1.6s forwards
+}
+
+.details div {
+    margin-left: -400px;
+    animation: slide 0.5s linear 1.4s forwards;
+    font-family: Roboto;
+}
+
+@keyframes surge {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide {
+    from {
+        margin-left: -400px;
+    }
+    to {
+        margin-left: 12px;
+    }
+}
